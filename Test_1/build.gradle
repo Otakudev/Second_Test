@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.2.3'
+    implementation group: 'io.cucumber', name: 'cucumber-testng', version: '7.2.3'
+    implementation group: 'org.testng', name: 'testng', version: '7.5'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.2'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '4.1.2'
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.5.0'
+}
+
+test {
+    useTestNG() {
+
+    }
+
+
+    scanForTestClasses = false
+    testLogging {
+        showStandardStreams = true
+        events = ["passed", "failed", "skipped"]
+    }
+}

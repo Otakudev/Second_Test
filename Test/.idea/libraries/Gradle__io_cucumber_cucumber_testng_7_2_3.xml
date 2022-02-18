@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:cucumber-testng:7.2.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-testng/7.2.3/89a5cfc73e7cc42d735c6d6000c03ba7330f54f5/cucumber-testng-7.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-testng/7.2.3/cab6c98657bab449fc32ebb81c1bc92ff85648b/cucumber-testng-7.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
