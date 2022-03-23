@@ -5,15 +5,14 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 
-@CucumberOptions(
+@CucumberOptions(monochrome = true,
 
-        features = "classpath:features",
-        plugin = {"pretty",
-                "json:target/cucumber/report.json",
-                "html:target/cucumber/report.html",
-        },
+        features = "src/test/resources/features/",
+        plugin = {"pretty", "html: cucumber-html-reports",
+                "json: cucumber-html-reports/cucumber.json"},
 
-        glue = {"com.example.steps_definitions"}
+        dryRun = false,
+        glue = {"com.example.steps_definitions", "fr.rattlier.cucumber"}
 
 
 )
